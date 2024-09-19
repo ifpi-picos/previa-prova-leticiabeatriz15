@@ -33,7 +33,23 @@ export function verificarParOuImpar(a){
 
 verificarParOuImpar(4)
 
+export function contarCaracter(palavra, letra){
+    if(typeof palavra === typeof "teste"){
+        let soma = 0
+        for(let i = 0; i < palavra.length; i++){
+            let carac = palavra[i].toLowerCase()
+            if(carac == letra){
+                soma++
+            }else{
+                continue
+            }
+        }
+        return soma
+    }else{
+        return null
+    }
 
+}
 
 
 

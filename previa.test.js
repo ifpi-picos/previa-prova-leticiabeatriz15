@@ -1,8 +1,8 @@
 import { describe, it, expect } from "bun:test";
 import {
   maiorNumero,
-  verificarParOuImpar
-  //contarCaracter,
+  verificarParOuImpar,
+  contarCaracter,
   //atualizarPropriedade
 } from "./previapro.js";
 
@@ -31,7 +31,7 @@ describe("verificarParOuImpar", () => {
     expect(verificarParOuImpar("não é um número")).toBe(null);
   });
 });
-/*
+
 // Teste para a função contarCaracterA
 describe("contarCaracter", () => {
   it("deve contar a quantidade de caracteres na string", () => {
@@ -42,6 +42,7 @@ describe("contarCaracter", () => {
   });
 });
 
+/*
 // Teste para a função atualizarPropriedade
 describe("atualizarPropriedade", () => {
   it("deve atualizar uma propriedade existente", () => {
