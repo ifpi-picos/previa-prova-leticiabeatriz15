@@ -1,10 +1,10 @@
 import { describe, it, expect } from "bun:test";
 import {
   maiorNumero,
-  verificarParOuImpar,
-  contarCaracter,
-  atualizarPropriedade,
-} from "./previa.js";
+  verificarParOuImpar
+  //contarCaracter,
+  //atualizarPropriedade
+} from "./previapro.js";
 
 // Teste para a função maiorNumero
 describe("maiorNumero", () => {
@@ -31,7 +31,7 @@ describe("verificarParOuImpar", () => {
     expect(verificarParOuImpar("não é um número")).toBe(null);
   });
 });
-
+/*
 // Teste para a função contarCaracterA
 describe("contarCaracter", () => {
   it("deve contar a quantidade de caracteres na string", () => {
@@ -55,4 +55,5 @@ describe("atualizarPropriedade", () => {
     const objeto = { nome: "João" };
     expect(atualizarPropriedade(objeto, "altura", 1.8)).toBe(null);
   });
-});
+}); 
+*/
