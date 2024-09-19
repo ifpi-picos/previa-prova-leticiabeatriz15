@@ -3,7 +3,7 @@ import {
   maiorNumero,
   verificarParOuImpar,
   contarCaracter,
-  //atualizarPropriedade
+  atualizarPropriedade
 } from "./previapro.js";
 
 // Teste para a função maiorNumero
@@ -42,7 +42,7 @@ describe("contarCaracter", () => {
   });
 });
 
-/*
+
 // Teste para a função atualizarPropriedade
 describe("atualizarPropriedade", () => {
   it("deve atualizar uma propriedade existente", () => {
@@ -57,4 +57,3 @@ describe("atualizarPropriedade", () => {
     expect(atualizarPropriedade(objeto, "altura", 1.8)).toBe(null);
   });
 }); 
-*/

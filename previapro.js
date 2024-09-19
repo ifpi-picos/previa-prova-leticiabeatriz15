@@ -52,4 +52,14 @@ export function contarCaracter(palavra, letra){
 }
 
 
+let objeto = { nome: "João", idade: 25 }
 
+export function atualizarPropriedade(obj, prop, valor){
+    if(obj[prop] != null){
+        obj[prop] = valor
+        return obj
+    }else{
+        return null
+    }
+}
+atualizarPropriedade(objeto, "idade", 30)
