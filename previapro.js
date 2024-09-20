@@ -18,7 +18,6 @@ console.log(maiorNumero(lista))
 
 export function verificarParOuImpar(a){
     if(typeof a === typeof 1){
-        console.log('entrou')
         if((a % 2) === 0){
             return "Par"
         }
@@ -31,18 +30,38 @@ export function verificarParOuImpar(a){
     }
 }
 
-verificarParOuImpar(4)
+// export function contarCaracter(palavra, letra){
+//     if(typeof palavra === typeof "teste"){
+//         let soma = 0
+//         for(let i = 0; i < palavra.length; i++){
+//             let carac = palavra[i].toLowerCase()
+//             if(carac == letra){
+//                 soma++
+//             }else{
+//                 continue
+//             }
+//         }
+//         return soma
+//     }else{
+//         return null
+//     }
+
+// }
 
 export function contarCaracter(palavra, letra){
     if(typeof palavra === typeof "teste"){
+        let palavraPadrao = palavra.toLowerCase()
+        console.log(palavraPadrao)
+        let repete = 0
         let soma = 0
-        for(let i = 0; i < palavra.length; i++){
-            let carac = palavra[i].toLowerCase()
-            if(carac == letra){
+        while(repete < palavraPadrao.length){
+            if(palavraPadrao[repete] == letra){
                 soma++
+                repete++
             }else{
+                repete++
                 continue
-            }
+            };
         }
         return soma
     }else{
@@ -50,10 +69,9 @@ export function contarCaracter(palavra, letra){
     }
 
 }
-
+contarCaracter("Abracadabra", "a")
 
 let objeto = { nome: "João", idade: 25 }
-
 export function atualizarPropriedade(obj, prop, valor){
     if(obj[prop] != null){
         obj[prop] = valor
