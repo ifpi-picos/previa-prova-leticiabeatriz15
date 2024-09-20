@@ -49,13 +49,13 @@ export function verificarParOuImpar(a){
 // }
 
 export function contarCaracter(palavra, letra){
-    if(typeof palavra === typeof "teste"){
+    if(typeof palavra === typeof "teste" && typeof letra === typeof "letra"){
         let palavraPadrao = palavra.toLowerCase()
         console.log(palavraPadrao)
         let repete = 0
         let soma = 0
         while(repete < palavraPadrao.length){
-            if(palavraPadrao[repete] == letra){
+            if(palavraPadrao[repete] == letra.toLowerCase()){
                 soma++
                 repete++
             }else{
